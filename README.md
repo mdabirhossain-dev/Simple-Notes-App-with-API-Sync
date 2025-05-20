@@ -19,10 +19,10 @@ Notes App completed.
 5. On each note there is a 'Edit' Button added to edit the existing note.
 6. Swiping each note from right to left will make visible the 'Delete' button. Tapping on delete button will delete the note.
 7. Each sync only new notes fetched from the API will be saved to CoreData. Already fetched note from API and edited later will stay same.
-8. Newly added notes will be listed at the bottom of the screen.
+8. Newly added notes will be listed at the bottom of the screen. And notes can be added only if both 'Title' and 'Body' field is not empty or something is written. If any field is empty 'Save' button will be faded and the save action is disabled.
 
 
-**Thank You**
-**Md Abir Hossain**
-**iOS Developer**
+
+**Md Abir Hossain**, 
+**iOS Developer**, 
 **mdabirhossain.dev@gmail.com**
