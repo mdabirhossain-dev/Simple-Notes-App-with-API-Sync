@@ -1,18 +1,21 @@
 //
 // 
-// FileName: WelcomeElement.swift
+// FileName: NotesModel.swift
 // ProjectName: Simple Notes App with API Sync
 //
 // Created by MD ABIR HOSSAIN on 20-05-2025 at 2:24 PM
 // Website: https://mdabirhossain.com/
 //
 
+import Foundation
 
-
-// MARK: - WelcomeElement
+typealias Notes = [NotesModel]
+ 
 struct NotesModel: Codable {
-    let userID, id: Int
-    let title, body: String
+    let id: Int?
+    let userID: Int?
+    let title: String?
+    let body: String?
 
     enum CodingKeys: String, CodingKey {
         case userID = "userId"
@@ -20,4 +23,3 @@ struct NotesModel: Codable {
     }
 }
 
-typealias Welcome = [NotesModel]

@@ -16,7 +16,7 @@ struct Simple_Notes_App_with_API_SyncApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
