@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		10457C5A2DDC8586002096B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10457C032DDC7305002096B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10457C0A2DDC7305002096B8;
+			remoteInfo = "Simple Notes App with API Sync";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		10457C0B2DDC7305002096B8 /* Simple Notes App with API Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Notes App with API Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10457C562DDC8586002096B8 /* Simple Notes App with API SyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Notes App with API SyncTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = "Simple Notes App with API Sync";
 			sourceTree = "<group>";
 		};
+		10457C572DDC8586002096B8 /* Simple Notes App with API SyncTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Simple Notes App with API SyncTests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		10457C082DDC7305002096B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10457C532DDC8586002096B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				10457C0D2DDC7305002096B8 /* Simple Notes App with API Sync */,
+				10457C572DDC8586002096B8 /* Simple Notes App with API SyncTests */,
 				10457C0C2DDC7305002096B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				10457C0B2DDC7305002096B8 /* Simple Notes App with API Sync.app */,
+				10457C562DDC8586002096B8 /* Simple Notes App with API SyncTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 10457C0B2DDC7305002096B8 /* Simple Notes App with API Sync.app */;
 			productType = "com.apple.product-type.application";
 		};
+		10457C552DDC8586002096B8 /* Simple Notes App with API SyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10457C5E2DDC8586002096B8 /* Build configuration list for PBXNativeTarget "Simple Notes App with API SyncTests" */;
+			buildPhases = (
+				10457C522DDC8586002096B8 /* Sources */,
+				10457C532DDC8586002096B8 /* Frameworks */,
+				10457C542DDC8586002096B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10457C5B2DDC8586002096B8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				10457C572DDC8586002096B8 /* Simple Notes App with API SyncTests */,
+			);
+			name = "Simple Notes App with API SyncTests";
+			packageProductDependencies = (
+			);
+			productName = "Simple Notes App with API SyncTests";
+			productReference = 10457C562DDC8586002096B8 /* Simple Notes App with API SyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					10457C0A2DDC7305002096B8 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					10457C552DDC8586002096B8 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 10457C0A2DDC7305002096B8;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				10457C0A2DDC7305002096B8 /* Simple Notes App with API Sync */,
+				10457C552DDC8586002096B8 /* Simple Notes App with API SyncTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		10457C092DDC7305002096B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10457C542DDC8586002096B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10457C522DDC8586002096B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10457C5B2DDC8586002096B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10457C0A2DDC7305002096B8 /* Simple Notes App with API Sync */;
+			targetProxy = 10457C5A2DDC8586002096B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		10457C1C2DDC7307002096B8 /* Debug */ = {
@@ -304,6 +379,42 @@
 			};
 			name = Release;
 		};
+		10457C5C2DDC8586002096B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 767JC457LD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mdabirhossain.com.Simple-Notes-App-with-API-SyncTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Notes App with API Sync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Simple Notes App with API Sync";
+			};
+			name = Debug;
+		};
+		10457C5D2DDC8586002096B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 767JC457LD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mdabirhossain.com.Simple-Notes-App-with-API-SyncTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Notes App with API Sync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Simple Notes App with API Sync";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,6 +432,15 @@
 			buildConfigurations = (
 				10457C1F2DDC7307002096B8 /* Debug */,
 				10457C202DDC7307002096B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10457C5E2DDC8586002096B8 /* Build configuration list for PBXNativeTarget "Simple Notes App with API SyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10457C5C2DDC8586002096B8 /* Debug */,
+				10457C5D2DDC8586002096B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
