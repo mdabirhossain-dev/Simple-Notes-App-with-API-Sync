@@ -1,6 +1,6 @@
 //
 // 
-// FileName: ContentView.swift
+// FileName: HomeView.swift
 // ProjectName: Simple Notes App with API Sync
 //
 // Created by MD ABIR HOSSAIN on 20-05-2025 at 2:21 PM
@@ -11,7 +11,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct HomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -85,5 +85,5 @@ private let itemFormatter: DateFormatter = {
 }()
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    HomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
