@@ -8,16 +8,27 @@
 //
 
 
-import Foundation
+import SwiftUI
 import CoreData
 
 class NotesViewModel: ObservableObject {
+    @AppStorage("lastSyncTime") private var lastSyncTime: String = ""
     @Published var notes: [NotesModel] = []
-    @Published var lastSyncTime: Date?
     @Published var isSynching: Bool = false
     @Published var syncStatus: String = ""
     
     private var context: NSManagedObjectContext
+    private var syncTime: Date? {
+        get {
+            ISO8601DateFormatter().date(from: lastSyncTime)
+        }
+        set {
+            if let newValue = newValue {
+                lastSyncTime = ISO8601DateFormatter().string(from: newValue)
+            }
+        }
+    }
+    
     init(context: NSManagedObjectContext = PersistenceController.shared.container.viewContext) {
         self.context = context
         loadNotesFromCoreData()
@@ -46,7 +57,7 @@ class NotesViewModel: ObservableObject {
             }
             try context.save()
             loadNotesFromCoreData()
-            lastSyncTime = Date()
+            syncTime = Date()
             
             syncStatus = "Synced!"
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
